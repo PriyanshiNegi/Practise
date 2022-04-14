@@ -1,4 +1,4 @@
-/*Basically two a methods two approach both iterative and recursive has been shown.
+/*Basically a methods two approaches i.e. both iterative and recursive has been shown.
 This Algorithm makes use of the property of the binary search tree which states that:
 
 The value of the root node will always be greater than the left node value
