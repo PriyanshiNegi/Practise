@@ -1,3 +1,25 @@
+/*
+Basically what happens is when a BST is traversed in an In-Order traversing manner then the resultant is a tree with elements arranged in ascending order which looks
+something like a graph linearly incresing for a proper pictorial explaination refer the link from below take from LeetCode discuss section.
+
+https://leetcode.com/problems/recover-binary-search-tree/discuss/1278113/Come-on-in!-No-explanation-can-be-more-straightforward-than-graph-for-this-problem
+
+Now when the 
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class Solution {
     public void recoverTree(TreeNode root) {
         List<TreeNode> nodes = new ArrayList<>();
