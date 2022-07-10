@@ -9,6 +9,19 @@ Output : 15 */
 
 Scenario 1: Here we consider that we can change the values for the array elements, so we take the 3 rd element and keep comapring it to the previous two elements and 
 updating the values till the end is reached.
+        
+public int minCostClimbingStairs(int[] cost)
+{
+        for (int i = 2; i < cost.length; i++) 
+        {
+            cost[i] += Math.min(cost[i-1], cost[i-2]);
+        }
+        return Math.min(cost[cost.length-1], cost[cost.length-2]);
+    }
+
+
+
+Scenario 2: Here we consider that the value of the elements of the array cannot be updated, just take two additional variables to store the values for the array elements.
 
 public int minCostClimbingStairs(int[] cost)
 {
@@ -21,6 +34,3 @@ public int minCostClimbingStairs(int[] cost)
         }
         return current;
     }
-
-
-Scenario 2: Here we consider that the value of the elements of the array cannot be updated
