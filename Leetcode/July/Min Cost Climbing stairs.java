@@ -7,13 +7,20 @@ Example : cost[]={10,15,20}
 so here if I jump on the 1st stair (15 value) and then skip 20 and jump to the top then I will only have to spend 15.
 Output : 15 */
 
+Scenario 1: Here we consider that we can change the values for the array elements, so we take the 3 rd element and keep comapring it to the previous two elements and 
+updating the values till the end is reached.
 
-public int minCostClimbingStairs(int[] cost) {
+public int minCostClimbingStairs(int[] cost)
+{
         int prev = 0, prevprev = 0, current = 0;
-        for(int i = 2; i <= cost.length; i++) {
+        for(int i = 2; i <= cost.length; i++)
+        {
             current = Math.min(cost[i-1]+prev, cost[i-2]+prevprev);
             prevprev = prev;
             prev = current;
         }
         return current;
     }
+
+
+Scenario 2: Here we consider that the value of the elements of the array cannot be updated
